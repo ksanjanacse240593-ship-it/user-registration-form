@@ -1,0 +1,315 @@
+
+/* Professional Online Competition Registration Form */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+
+body{
+
+    background:#eef4fb;
+    padding:40px 15px;
+
+}
+
+
+
+.container{
+
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+h1{
+
+    text-align:center;
+    color:#0b3d91;
+    margin-bottom:30px;
+    font-size:32px;
+
+}
+
+
+
+
+h2{
+
+    color:#0b3d91;
+    font-size:22px;
+    margin:30px 0 15px;
+    padding-left:10px;
+    border-left:5px solid #0b3d91;
+
+}
+
+
+
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+label{
+
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#333;
+
+}
+
+
+
+label span{
+
+    color:red;
+    font-size:18px;
+
+}
+
+
+
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select{
+
+
+    width:100%;
+    padding:12px;
+
+    border:1px solid #c7d2e0;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    background:#fff;
+
+}
+
+
+
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:#0b3d91;
+
+    box-shadow:0 0 5px rgba(11,61,145,0.3);
+
+}
+
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+table th{
+
+    background:#0b3d91;
+
+    color:white;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+
+
+
+table td{
+
+    border:1px solid #ddd;
+
+    padding:8px;
+
+}
+
+
+
+
+table input{
+
+    width:100%;
+
+    padding:8px;
+
+    border:none;
+
+    outline:none;
+
+}
+
+
+}
+
+
+
+}
+
+
+table tr:nth-child(even){
+
+    background:#f7faff;
+
+}
+
+button{
+
+    width:250px;
+
+
+    align-items:center;
+
+}
+
+
+    flex-direction:column;
+
+
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+
+
+.buttons{
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+}
+
+
+
+
+button{
+
+    padding:13px 40px;
+
+
+    overflow-x:auto;
+    border:none;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+table{
+
+    display:block;
+
+
+}
+
+
+
+
+
+    font-size:25px;
+
+
+h1{
+.container{
+
+    padding:20px;
+
+}
+
+button[type="submit"]{
+
+@media(max-width:768px){
+
+
+
+
+
+    background:#f8fafc;
+
+}
+
+
+
+input[type="file"]{
+
+    background:#198754;
+
+    color:white;
+
+
+}
+
+
+}
+
+    background:#b02a37;
+
+
+
+    color:white;
+
+
+
+button[type="reset"]:hover{
+
+}
+
+
+
+
+    background:#dc3545;
+}
+
+button[type="reset"]{
+
+
+
+
+button[type="submit"]:hover{
+

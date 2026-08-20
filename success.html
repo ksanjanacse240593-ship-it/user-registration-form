@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registration Successful</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+
+body{
+
+    background:#eef4fb;
+    padding:40px 15px;
+
+}
+
+
+
+.receipt{
+
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+h1{
+
+    text-align:center;
+    color:#198754;
+    margin-bottom:10px;
+
+}
+
+
+
+.subtitle{
+
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+
+}
+
+
+
+.profile{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.image-box{
+
+    text-align:center;
+}
+
+
+
+.image-box h3{
+
+    margin-bottom:10px;
+    color:#0b3d91;
+
+}
+
+
+
+.image-box img{
+
+    width:160px;
+    height:180px;
+    object-fit:cover;
+    border:2px solid #0b3d91;
+    border-radius:8px;
+
+}
+
+
+
+
+.signature img{
+
+    height:90px;
+    width:200px;
+    object-fit:contain;
+
+}
+
+
+
+
+
+h2{
+
+    color:#0b3d91;
+    margin:25px 0 15px;
+    border-left:5px solid #0b3d91;
+    padding-left:10px;
+
+}
+
+
+
+
+
+.details,
+.education{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+
+.details th,
+.education th{
+
+    background:#0b3d91;
+    color:white;
+    padding:12px;
+
+}
+
+
+
+.details td,
+.education td{
+
+    border:1px solid #ccc;
+    padding:12px;
+
+}
+
+
+
+.education td{
+
+    text-align:center;
+
+}
+
+
+
+
+.education tr:nth-child(even),
+.details tr:nth-child(even){
+
+    background:#f5f9ff;
+
+}
+
+
+
+
+.buttons{
+
+    text-align:center;
+    margin-top:35px;
+
+}
+
+
+
+button{
+
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    color:white;
+
+}
+
+
+
+.print{
+
+    background:#198754;
+
+}
+
+
+
+.register{
+
+    background:#0b3d91;
+
+}
+
+
+
+button:hover{
+
+    opacity:0.85;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+.profile{
+
+    flex-direction:column;
+
+}
+
+}
+
+
+
+
+@media print{
+
+
+.buttons{
+
+    display:none;
+
+}
+
+
+body{
+
+    background:white;
+
+}
+
+
+.receipt{
+
+    box-shadow:none;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="receipt">
+
+
+
+<h1>
+✅ Registration Successful!
+</h1>
+
+
+
+<p class="subtitle">
+Online Competition Registration Receipt
+</p>
+
+
+
+
+
+<div class="profile">
+
+
+
+<div class="image-box">
+
+<h3>Passport Photo</h3>
+
+<img id="photo">
+
+
+</div>
+
+
+
+
+<div class="image-box signature">
+
+<h3>Signature</h3>
+
+<img id="signature">
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<h2>Candidate Information</h2>
+
+
+
+<table class="details">
+
+
+<tr>
+
+<th>Field</th>
+
+<th>Details</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>First Name</td>
+
+<td id="fname"></td>
+
+</tr>
+
+
+
+<tr>
+
+<td>Second Name</td>
+
+<td id="sname"></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Father Name</td>
+
+<td id="father"></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Mother Name</td>
+
+<td id="mother"></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Gender</td>
+
+<td id="gender"></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Date of Birth</td>
+
+<td id="dob"></td>
+
+</tr>
+
+
+</table>
+
+
+
+
+
+
+
+<h2>Education Details</h2>
+
+
+
+<table class="education">
+
+
+<thead>
+
+<tr>
+
+<th>Qualification</th>
+
+<th>Institution</th>
+
+<th>Board / University</th>
+
+<th>Year</th>
+
+<th>Percentage / CGPA</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="educationData">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+<div class="buttons">
+
+
+<button class="print" onclick="window.print()">
+
+Print Receipt
+
+</button>
+
+
+
+<button class="register" onclick="window.location='index.html'">
+
+Register Another Candidate
+
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+if(data){
+
+document.getElementById("fname").innerHTML =
+
+
+document.getElementById("sname").innerHTML =
+
+
+
+
+
+
+
+
+let rows="";
+
+data.education.forEach(function(item){
+
+rows += `
+
+
+<td>${item.qualification}</td>
+<td>${item.institution}</td>
+
+<td>${item.board}</td>
+<td>${item.year}</td>
+
+<td>${item.marks}</td>
+
+</tr>
+
+
+
+});
+
+
+
+rows;
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+document.getElementById("educationData").innerHTML =
+`;
+
+
+<tr>
+
+
+
+
+data.signature;
+
+
+document.getElementById("signature").src =
+data.photo;
+
+
+document.getElementById("photo").src =
+data.dob;
+
+
+document.getElementById("dob").innerHTML =
+data.gender;
+
+
+
+document.getElementById("gender").innerHTML =
+data.motherName;
+
+
+
+document.getElementById("mother").innerHTML =
+data.fatherName;
+
+data.secondName;
+
+document.getElementById("father").innerHTML =
+
+
+data.firstName;
+
+
+
+
+
+
+
+let data =
+JSON.parse(localStorage.getItem("registrationData"));
+
+<script>
+

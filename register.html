@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Competition Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>Online Competition Registration Form</h1>
+
+
+<form id="registrationForm">
+
+
+<h2>Personal Details</h2>
+
+
+<div class="form-group">
+
+<label>
+First Name <span>*</span>
+</label>
+
+<input type="text" id="fname" required>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label>
+Second Name
+</label>
+
+<input type="text" id="sname">
+
+</div>
+
+
+
+
+<div class="form-group">
+
+<label>
+Father Name
+</label>
+
+<input type="text" id="father">
+
+</div>
+
+
+
+
+<div class="form-group">
+
+<label>
+Mother Name
+</label>
+
+<input type="text" id="mother">
+
+</div>
+
+
+
+
+<div class="form-group">
+
+<label>
+Gender
+</label>
+
+<select id="gender">
+
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+
+
+<div class="form-group">
+
+<label>
+Date of Birth <span>*</span>
+</label>
+
+<input type="date" id="dob" required>
+
+</div>
+
+
+
+
+
+<h2>Education Details</h2>
+
+
+<table>
+
+<tr>
+
+<th>Qualification</th>
+<th>Institution</th>
+<th>Board/University</th>
+<th>Year</th>
+<th>Percentage/CGPA</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+<input type="text" id="q1" value="10th">
+</td>
+
+<td>
+<input type="text" id="inst1">
+</td>
+
+<td>
+<input type="text" id="board1">
+</td>
+
+<td>
+<input type="text" id="year1">
+</td>
+
+<td>
+<input type="text" id="mark1">
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<input type="text" id="q2" value="12th">
+</td>
+
+<td>
+<input type="text" id="inst2">
+</td>
+
+<td>
+<input type="text" id="board2">
+</td>
+
+<td>
+<input type="text" id="year2">
+</td>
+
+<td>
+<input type="text" id="mark2">
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<input type="text" id="q3" value="Graduation">
+</td>
+
+<td>
+<input type="text" id="inst3">
+</td>
+
+<td>
+<input type="text" id="board3">
+</td>
+
+<td>
+<input type="text" id="year3">
+</td>
+
+<td>
+<input type="text" id="mark3">
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+
+<h2>Upload Documents</h2>
+
+
+
+
+<div class="form-group">
+
+<label>
+Passport Photo <span>*</span>
+</label>
+
+
+<input
+type="file"
+id="photo"
+accept="image/*"
+required>
+
+</div>
+
+
+
+
+
+<div class="form-group">
+
+<label>
+Signature <span>*</span>
+</label>
+
+
+<input
+type="file"
+id="signature"
+accept="image/*"
+required>
+
+</div>
+
+
+
+
+
+<div class="buttons">
+
+
+<button type="submit">
+Submit
+</button>
+
+
+<button type="reset">
+Reset
+</button>
+
+
+</div>
+
+
+
+
+</form>
+
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
